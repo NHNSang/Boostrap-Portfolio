@@ -1,0 +1,210 @@
+/* css header  */
+header .collapse .nav-link {
+    color: white;
+    position: relative;
+    transition: all 0.5s;
+  }
+  
+  header .navbar-nav .nav-link.active {
+    color: green;
+  }
+  
+  header .navbar-nav .nav-link.active::before {
+    width: 100%;
+  }
+  
+  header .collapse .nav-link::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  
+  header .collapse .nav-item {
+    margin: 0 10px;
+  }
+  
+  header .collapse .nav-link:hover::before {
+    width: 100%;
+  }
+  
+  header .collapse .nav-link:hover {
+    color: green;
+  }
+  
+  /* css carousel  */
+  .cyber_carousel .carousel-inner {
+    height: 100vh;
+  }
+  
+  .cyber_carousel .carousel-inner .carousel-caption img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .cyber_carousel .carousel-caption h5 {
+    font-size: 56px;
+  }
+  
+  .cyber_carousel .carousel-caption p {
+    font-size: 24px;
+  }
+  
+  .cyber_carousel .carousel-caption {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    /* background-color: rgba(39, 43, 54, 0.5); */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  }
+  
+  .cyber_carousel .overlay {
+    background-color: rgba(39, 43, 54, 0.5);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .cyber_carousel .carousel-indicators [data-bs-target] {
+    height: 8px ;
+    width: 8px ;
+    border-radius: 50% ;
+  }
+  /* PROJECT CSS */
+.project .project_content .nav-item button.active{
+    background-color: green;
+    color: white !important ;
+    border-color: green !important;
+}
+.project  .project_content .tab-content .tab-pane .card{
+    border: unset;
+    box-shadow: 0 0 0.4rem rgba(0,0,0,.13);
+}
+.project  .project_content .tab-content .tab-pane .card .card-body{
+    border: 1px solid transparent;
+    border-top: unset;
+    transition: all 0.5s;
+    border-radius: 0 0 6px 6px;
+}
+.project  .project_content .tab-content .tab-pane .card:hover .card-body {
+    border-color: green;
+}
+.project  .project_content .tab-content .tab-pane .card:hover h3{
+    color: green;
+}
+
+/* AVAILABLE CSS */
+.available{
+    background-image: url(../img/3.jpg);
+    height:70vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.available .avai_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7,10,12,.72);
+}
+.available .container{
+    z-index: 100;
+    position: relative;
+}
+.available .avai_content .avai_item{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 50px 30px;
+    transition: all .5s;
+}
+.available .avai_content .avai_item:hover{
+  background: #000;
+  border-color: #fff;
+}
+.available .avai_content .avai_item i{
+    color: green;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.available .avai_title p{
+    padding: 40px 0;
+}
+.available .avai_content .avai_item h3{
+  padding: 15px 0px 20px 0px;
+}
+
+/* AWARD */
+.award{
+  background-image: url(../img/memphis_3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.award .award_content .award_left{
+  background-color: rgba(255,255,255,.25);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+  backdrop-filter: blur(3px);
+  padding: 45px 0px 0px 28px;
+}
+
+/* FOOTER CSS */
+footer .footer_content .footer_top a i{
+  height: 30px;
+    line-height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #9EA99D;
+    border: 1px solid #454545;
+    transition: all .5s;
+}
+footer .footer_content .footer_top a i:hover{
+  color: green;
+  border-color: green;
+}
+footer .footer_content hr{
+  color: darkgray !important;
+}
+.footer_content .footer_bottom p a{
+  color: gray;
+}
+.footer_content .footer_bottom p a:hover{
+  color: green  ;
+}
+
+
+/* đoạn code trong @media sẽ hoạt động khi các thiết bị  */
+@media screen and (max-width: 992px) {
+  .cyber_carousel h5{
+    color: red;
+  }
+}
